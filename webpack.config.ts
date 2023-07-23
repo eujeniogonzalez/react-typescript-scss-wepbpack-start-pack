@@ -77,11 +77,13 @@ const config: Configuration = {
       patterns: [
         {
           from: path.join(__dirname, 'public', 'fonts'),
-          to: path.join(__dirname, 'build', 'fonts')
+          to: path.join(__dirname, 'build', 'fonts'),
+          noErrorOnMissing: true
         },
         {
           from: path.join(__dirname, 'public', 'images'),
-          to: path.join(__dirname, 'build', 'images')
+          to: path.join(__dirname, 'build', 'images'),
+          noErrorOnMissing: true
         }
       ],
     })
